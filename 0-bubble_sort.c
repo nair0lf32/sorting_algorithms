@@ -1,9 +1,9 @@
 #include "sort.h"
 /**
-* bubble_sort - implements bubble sort algorithm in c
-* @array: array of integers
-* @size: size of array
-* Return: Nothing
+*bubble_sort - implements bubble sort algorithm in c
+*@array: array of integers
+*@size: size of array
+*Return: Nothing
 */
 void bubble_sort(int *array, size_t size)
 {
@@ -11,7 +11,9 @@ size_t i = 0;
 unsigned int temp;
 int noswap = 0;
 if (array == NULL || size < 2)
-	return;
+{
+return;
+}
 while (noswap == 0)
 {
 noswap = 1;
